@@ -2,11 +2,17 @@
 
 此镜像为 dubbo-admin-2.5.10.war 的docker镜像，参考 [chenchuxin/dubbo-admin-docker](https://github.com/chenchuxin/dubbo-admin-docker)
 
+## 打镜像
+```
+docker build --rm -t dubbo-admin:2.5.10 .
+```
+
 ## 启动
-* dubbo.registry.address ：zk 地址
-* dubbo.registry.group ：zk 组
 
 ```
+# dubbo.registry.address ：zk 地址
+# dubbo.registry.group ：zk 组
+
 docker run -d --name dubbo-admin \
 -p 8080:8080 \
 -e dubbo.registry.address=zookeeper://127.0.0.1:2181 \
