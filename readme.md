@@ -8,7 +8,7 @@
 
 ```
 docker run -d --name dubbo-admin \
--p 8081:8080 \
+-p 8080:8080 \
 -e dubbo.registry.address=zookeeper://127.0.0.1:2181 \
 -e dubbo.registry.group=dubbo \
 -e dubbo.admin.root.password=root \
