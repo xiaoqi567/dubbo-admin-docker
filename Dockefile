@@ -1,0 +1,9 @@
+FROM tomcat:9-jre8-alpine
+
+# timezone
+# COPY --from=build /etc/localtime /etc/localtime
+WORKDIR /usr/local/tomcat/webapps
+ARG version=2.0.0
+RUN rm -rf ROOT
+COPY dubbo-admin-2.5.10.war .
+RUN mv dubbo-admin-2.5.10.war ROOT.war
