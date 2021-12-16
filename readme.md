@@ -1,6 +1,6 @@
 # dubbo-admin 镜像
 
-此镜像为 dubbo-admin-2.5.10.war 的docker镜像，支持查看指定组。
+此镜像为 dubbo-admin-2.5.10.war 的docker镜像，支持查看指定zk组。
 
 参考 [chenchuxin/dubbo-admin-docker](https://github.com/chenchuxin/dubbo-admin-docker)
 
